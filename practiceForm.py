@@ -35,6 +35,12 @@ dob_date.click()
 subject = wait.until(EC.element_to_be_clickable((By.XPATH, "//input[@id='subjectsInput']")))
 subject.send_keys("!@#$%")
 subject.send_keys(Keys.TAB)
+#hobbiesField
+hobby=driver.find_element(By.XPATH,"//label[text()='Reading']")
+hobby.click()
+#pictureField
+picture=driver.find_element(By.XPATH,"//input[@id='uploadPicture']")
+picture.send_keys(r"C:\Users\asus\Downloads\OIP.jpg")
 #submitField
 submitBtn=driver.find_element(By.XPATH,"//button[text()='Submit']")
 submitBtn.submit()
