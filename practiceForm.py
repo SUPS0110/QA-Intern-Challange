@@ -7,9 +7,9 @@ driver.get("https://demoqa.com/automation-practice-form")
 wait=WebDriverWait(driver,10)
 #nameField
 firstName=driver.find_element(By.XPATH,"//input[@id='firstName']")
-firstName.send_keys("ABC123")
+firstName.send_keys("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZcfhgjkldxcgfhjdcgfh")
 lastName=driver.find_element(By.XPATH,"//input[@id='lastName']")
-lastName.send_keys("@XYZ")
+lastName.send_keys("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZqwertyuiikkjhgfdsa")
 #submitField
 submitBtn=driver.find_element(By.XPATH,"//button[text()='Submit']")
 submitBtn.submit()
