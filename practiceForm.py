@@ -10,6 +10,10 @@ firstName=driver.find_element(By.XPATH,"//input[@id='firstName']")
 firstName.send_keys("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZcfhgjkldxcgfhjdcgfh")
 lastName=driver.find_element(By.XPATH,"//input[@id='lastName']")
 lastName.send_keys("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZqwertyuiikkjhgfdsa")
+#emailField
+email=driver.find_element(By.XPATH,"//input[@id='userEmail']")
+email.send_keys("abc@gmail.com")
+
 #submitField
 submitBtn=driver.find_element(By.XPATH,"//button[text()='Submit']")
 submitBtn.submit()
