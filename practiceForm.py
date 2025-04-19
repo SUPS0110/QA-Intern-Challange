@@ -18,7 +18,7 @@ gender=driver.find_element(By.XPATH,"//label[text()='Female']")
 gender.click()
 #mobileField
 mobile=driver.find_element(By.XPATH,"//input[@id='userNumber']")
-mobile.send_keys("")
+mobile.send_keys("12345")
 
 #submitField
 submitBtn=driver.find_element(By.XPATH,"//button[text()='Submit']")
