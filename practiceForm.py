@@ -12,7 +12,11 @@ lastName=driver.find_element(By.XPATH,"//input[@id='lastName']")
 lastName.send_keys("xyz")
 #emailField
 email=driver.find_element(By.XPATH,"//input[@id='userEmail']")
-email.send_keys("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb.com")
+email.send_keys("abc@gmail.com")
+#genderField
+gender=driver.find_element(By.XPATH,"//label[text()='Female']")
+gender.click()
+
 #submitField
 submitBtn=driver.find_element(By.XPATH,"//button[text()='Submit']")
 submitBtn.submit()
