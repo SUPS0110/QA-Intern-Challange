@@ -33,8 +33,7 @@ dob_date=driver.find_element(By.XPATH,"//div[@class='react-datepicker__day react
 dob_date.click()
 #subjectField
 subject = wait.until(EC.element_to_be_clickable((By.XPATH, "//input[@id='subjectsInput']")))
-subject.send_keys("a")
-subject.send_keys(Keys.TAB)
+subject.send_keys("")
 #submitField
 submitBtn=driver.find_element(By.XPATH,"//button[text()='Submit']")
 submitBtn.submit()
