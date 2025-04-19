@@ -40,7 +40,11 @@ hobby=driver.find_element(By.XPATH,"//label[text()='Reading']")
 hobby.click()
 #pictureField
 picture=driver.find_element(By.XPATH,"//input[@id='uploadPicture']")
-picture.send_keys(r"C:\Users\asus\Downloads\Practice_Form_Test_Cases.pdf")
+picture.send_keys(r"C:\Users\asus\Downloads\OIP.jpg")
+#addressField
+address=driver.find_element(By.XPATH,"//textarea[@id='currentAddress']")
+address.send_keys("KTM")
+
 #submitField
 submitBtn=driver.find_element(By.XPATH,"//button[text()='Submit']")
 submitBtn.submit()
