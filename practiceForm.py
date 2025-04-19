@@ -44,6 +44,16 @@ picture.send_keys(r"C:\Users\asus\Downloads\OIP.jpg")
 #addressField
 address=driver.find_element(By.XPATH,"//textarea[@id='currentAddress']")
 address.send_keys("KTM")
+#state&cityField
+dropdownState=wait.until(EC.element_to_be_clickable((By.XPATH,"//div[@id='state']")))
+driver.execute_script("arguments[0].scrollIntoView(true)",dropdownState)
+dropdownState.click()
+optionState=wait.until(EC.element_to_be_clickable((By.XPATH,"//div[text()='NCR']")))
+optionState.click()
+dropdownCity=wait.until(EC.element_to_be_clickable((By.XPATH,"//div[@id='city']")))
+dropdownCity.click()
+optionCity=wait.until(EC.element_to_be_clickable((By.XPATH,"//div[text()='Noida']")))
+optionCity.click()
 
 #submitField
 submitBtn=driver.find_element(By.XPATH,"//button[text()='Submit']")
